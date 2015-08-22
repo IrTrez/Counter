@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/count"
+        android:background="@color/lime"
+        android:weightSum="10"
+        android:layout_above="@+id/add">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/reset"
+            android:id="@+id/reset"
+            android:layout_gravity="end"
+            android:background="@color/red"
+            android:layout_weight="0.33"
+
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/count"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:height="175sp"
+        android:textSize="150sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/dark"
+        android:ems="10"
+        android:editable="false"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="100sp"
+        android:id="@+id/add"
+        android:layout_above="@+id/retract"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:height="190dp"
+        android:background="@color/dark"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retract"
+        android:textSize="100sp"
+        android:id="@+id/retract"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:height="150dp"
+        android:background="@color/light"
+        android:textColor="@color/white"
+
+        />
+
+
+</RelativeLayout>
